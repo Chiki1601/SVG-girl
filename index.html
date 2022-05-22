@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> SVG Girl Animation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg id="app" @mousemove="coordenates" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.86 508.52">
+  <path id="hair" d="M287.76,50.9c-2.9,1.92-6.34,1.45-8.94-1.13C261.9,33,217.54,17.24,190.39,27,160.73,37.66,161.58,66.3,165,80s3.93,40.93-28,12S94.59,60.5,68.36,89.43s-22.81,85.27-8,108.11S86,239.82,78,252,33,263,29.59,292,1.47,372.77,22,388s50.92,79.06,73.73,56.22S120.79,406.86,155,416s43.37,49.53,77.58,43.44S383,453.45,399,423s-27.91-49.48,12-51,87.3-29.8,70.19-63.3S453.27,220.81,436,201c-34-39-49.41-20.42-30-61,11-23,47-58-22.88-97.77C344.63,20.32,302.59,41.12,287.76,50.9Z" transform="translate(-13.93 -24)" fill="#1a1a1a" />
+  <path id="shirt-back" d="M152,466c7-5,47-13,60-14s95.59-4.92,107.8-1.46S359.19,461.42,361,465s-126,9-126,9H148.63Z" transform="translate(-13.93 -24)" fill="#ffb61f" />
+  <g id="neck">
+    <path id="skin" d="M197.62,396.94s-2.46,58.65-10.11,64.65-36,11-57.89,19C117.47,485.07,183.44,511.4,250,511c53.05-.32,106.47-26.39,121-30.39-12-19-28.4-10-40.41-24s-27.76-66.18-27.76-66.18L264,366.5l-55.7,3Z" transform="translate(-13.93 -24)" fill="#fed3ca" />
+    <path id="shadow" d="M240,386c10.47-11.86,63.07,5.13,63.07,5.13s7,20.56,9.43,27.37c2.65,7.39,8.25,22.11,12,29,1,1.86,17.58,12.56,22.5,17.5,4.25,4.27-3,3-3,3s-80.61-33.76-97.59-51.23C240.94,411.13,234.8,391.89,240,386Z" transform="translate(-13.93 -24)" fill="#fea59b" />
+  </g>
+  <ellipse id="face" cx="231.07" cy="254" rx="117" ry="131" fill="#fed3ca" />
+  <path id="front-hair" d="M178.5,235.5c42-32,24-73,60-73s41,28,58,38,36.19,40.65,59.1,35.82,41.9,14.18,44.9-17.82-25-83-68-96-93-16-135,0-85,35-90,54c-2.19,8.32-6.17,55.53,4,71C124.55,267.34,154.9,253.48,178.5,235.5Z" transform="translate(-13.93 -24)" fill="#1a1a1a" />
+  <ellipse id="left-ear" cx="126.19" cy="286.05" rx="19.5" ry="30.12" transform="translate(-82.97 17.85) rotate(-14.84)" fill="#fed3ca" />
+  <ellipse id="right-ear" cx="359.19" cy="284.05" rx="30.12" ry="19.5" transform="translate(-21.3 534.52) rotate(-75.16)" fill="#fed3ca" />
+  <path id="shirt-front" d="M167,465c20.56,3.18,53.82,28.49,78,29,47,1,94.15-29.29,105-32,16-4,135,39.27,122,47-79,47-296.61,10.27-370,3-4-.4-61-3-48-16S152,462.68,167,465Z" transform="translate(-13.93 -24)" fill="#ffb61f" />
+  <path id="nose" d="M231.5,314.8c4.59,3.14,15.48,5.49,19.11,2.51,1.53-1.25,1.53-.63,2.29-4.39s-3.06-4.23-4.59-3.77c-3.3,1-10.7,4.64-10.7,7.53" transform="translate(-13.93 -24)" fill="#fea59b" stroke="#fea59b" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" />
+  <circle id="left-eye" cx="169.57" cy="252.5" r="9.5" fill="#553200" />
+  <circle id="right-eye" cx="278.57" cy="252.5" r="9.5" fill="#553200" />
+  <path id="right-eyebrow" d="M278,245s21,0,44,12" transform="translate(-13.93 -24)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+  <path id="left-eyebrow" d="M198,247s-21,0-44,12" transform="translate(-13.93 -24)" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+  <path id="mouth" d="M215.48,355.51c9,10,47.7,13,58-2" transform="translate(-13.93 -24)" fill="none" stroke="#fea59b" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" />
+  <ellipse id="left-blush" cx="163.07" cy="299.5" rx="24" ry="13.5" fill="#febfb6" />
+  <ellipse id="right-blush" cx="300.07" cy="299.5" rx="24" ry="13.5" fill="#febfb6" />
+</svg>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
